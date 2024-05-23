@@ -50,8 +50,10 @@ public class Client {
         try {
             Registry registry = LocateRegistry.getRegistry(host);
             Hello stub = (Hello) registry.lookup("Hello");
+
             String response = stub.sayHello();
-            System.out.println("response: " + response);
+            
+            System.out.println("response: " + response+ "\n"+stub.SomaNPrimeiros(10));
         } catch (Exception e) {
             System.err.println("Client exception: " + e.toString());
             e.printStackTrace();

@@ -50,6 +50,10 @@ public class Server implements Hello {
         return "Hello, world!";
     }
 
+    public int SomaNPrimeiros(int nTermos){
+        return (nTermos*(nTermos+1))/2;
+    }
+
     public static void main(String args[]) {
 
         try {
